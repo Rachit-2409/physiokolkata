@@ -26,7 +26,7 @@
     --error-color: rgb(230, 87, 87);
 }
 .unipadding{
-    padding: 100px 30px;
+    padding: 120px 60px;
 }
 h2 {
     font-size: 4em;
@@ -222,7 +222,7 @@ margin-left: 40px;
 
 /*ABOUT*/
 
-#about_span,.why-block,.solution-block{
+#about_span, .why-block, .solution-block, .client-block, .contact-block{
     background: var(--secondary-color);
     padding: 10px 15px 10px 15px;
     border-radius: 25px;
@@ -409,7 +409,7 @@ margin-left: 40px;
 .block-us{
     display: flex;
     align-items: center;
-    padding: 40px;
+    padding: 35px;
 }
 .block-us:nth-child(1){    border-bottom: 1px solid var(--accent-color);}
 .block-us:nth-child(2){    border-bottom: 1px solid var(--accent-color);}
@@ -431,11 +431,11 @@ margin-left: 40px;
 .block-us-content h5{
     font-size: 1.15em;
     font-weight: 700;
-    margin: 0;
+    margin-bottom: 10px;
 }
 
 .block-us-content p{
-    font-size: 1em;
+    font-size:1em;
     margin: 0;
 
 }
@@ -457,7 +457,7 @@ margin-left: 40px;
  }
  .left-Us p{
     color: var(--white-color);
-    font-size: 1.1em;
+    font-size: 1em;
  }
  .right-Us{
     background-color: var(--secondary-color);
@@ -467,7 +467,7 @@ margin-left: 40px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0;
+    bottom: 120px;
  }
  .why-us-title{
     max-width: 650px;
@@ -483,7 +483,6 @@ margin-left: 40px;
  .solution{
     padding: 100px 0;
     text-align: center;
-    margin: 40px 0;
     background: 
         linear-gradient(#153c33c2, #153c33c2), /* Semi-transparent overlay */
         url(
@@ -508,10 +507,10 @@ margin-left: 40px;
 
  .common_section{
     background-color: var(--secondary-color);
-    background-image: url(/assests/asset\ 67.svg);
+    background-image: url(/assests/asset\ 65.svg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: right;
+    background-size: contain;
  }
 
  .common_section_img{
@@ -523,6 +522,8 @@ margin-left: 40px;
  .common_section_img img{
     width: 100%;
  }
+
+
  .swiper {
     width: 100%;
     height: 100%;
@@ -530,18 +531,92 @@ margin-left: 40px;
 
   .swiper-slide {
     text-align: center;
-    font-size: 18px;
-    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
 
-  .swiper-slide img {
-    display: block;
+
+  .client-box p{
+    font-size: 1em;
+    text-align: left;
+  }
+
+  .client-box{
+    position: relative;
+    height: 100%;
+    padding: 30px;
+    border: 2px solid var(--white-color);
+    border-radius: 15px;
+    background-color: var(--white-color);
+  }
+  .client-name{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 1.05em;
+    text-transform: capitalize;
+  }
+.client{
+    margin: 30px 0;
+    color : var(--primary-color);
+}
+.client-title{
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+.clients{
+    background-image: url(./assests/asset\ 67.svg);
+    background-color: var(--secondary-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.innerbox{
+    padding: 30px;
+    outline: 1px solid var(--accent-color);
+    border-radius: 20px;
+    height: 100%;
+}
+.innerbox p{
+    font-size: 1.05em;
+}
+.contact-box{
+    max-width: 700px;
+    text-align: center;
+    margin: 15px auto;
+    color: var(--primary-color);
+}
+.map iframe{
+    border-radius: 20px;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-  }
+}
+.contact-icon{
+    height: 50px;
+    width: 50px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
 
-  
+input, textarea{
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+}
+.contact-box h3{
+    margin: 30px 0;
+    color: var(--accent-color);
+}
+
