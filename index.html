@@ -32,11 +32,33 @@
     <!--Content-->
     <meta name="desciption"
         content="At Physio Kolkata, we bring over 12 years of experience in delivering expert physiotherapy services right to your doorstep or at our clinic. Our services are designed to provide comprehensive care for a wide range of physical conditions. Whether you need rehabilitation post-surgery or are dealing with chronic pain, we are here to help.">
-
+    <!--Animate-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
 <body>
+
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="./assests/Group 46.svg" alt=""></a>
+                </div>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
 
     <!--Home-->
     <div class="home unipadding" id="home">
@@ -44,7 +66,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <!--Hero Content-->
-                    <div class="hero-content">
+                    <div class="hero-content" data-aos="fade-right" data-aos-duration="3000">
                         <h3>Destination For Relief & Wellnes</h3>
                         <h2>Welcome To Physio Kolkata</h2>
                         <p>we’re dedicated to helping you live a pain-free and active life. Our team of experienced
@@ -52,8 +74,8 @@
 
                         <!--CTA-->
                         <div class="hero-button-box">
-                            <a href="#" class="default_button">Explore Services</a>
-                            <a href="#" class="default_button light_btn">book appointment</a>
+                            <a href="#service" class="default_button">Explore Services</a>
+                            <a href="#contact" class="default_button light_btn">book appointment</a>
                         </div>
 
                         <span class="divider"></span>
@@ -77,10 +99,13 @@
 
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="3000">
                     <!--Registration Form-->
-                    <div class="registration-form">
+                    <div class="home-img">
+                        <img src="./assests/Home.png" alt="" class="img-fluid">
+                        <div class="animate-block">
 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,12 +164,12 @@
     <div class="about unipadding" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="about-image">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="3000">
+                    <div class="about-image d-flex justify-content-center">
                         <img src="./assests/about.png" alt="" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="3000">
                     <div class="about-content">
                         <span id="about_span">About Us</span>
                         <h3>We Are Best Physical Therapy Clinic in town</h3>
@@ -205,7 +230,8 @@
                                     <p>physiotherapist</p>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 mt-3 d-flex justify-content-start"  ><a href="" class="default_button">Make Appointment</a></div>
+                            <div class="col-lg-6 col-md-6 mt-3 d-flex justify-content-start"><a href=""
+                                    class="default_button">Make Appointment</a></div>
                         </div>
 
                     </div>
@@ -218,7 +244,7 @@
     <div class="common_section ">
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-lg-9 col-md-12 p-2 p-md-3 p-sm-5">
+                <div class="col-lg-9 col-md-12 p-2 p-md-3 p-sm-5 " data-aos="fade-right" data-aos-duration="3000">
                     <p>Welcome to Physio Kolkata, a certified physiotherapy center committed to excellence in patient
                         care. Our certification reflects our adherence to the highest standards of practice and ensures
                         that you receive the best possible treatment. Each of our physiotherapists is fully licensed and
@@ -228,7 +254,8 @@
                         mind knowing you're in the hands of certified professionals dedicated to your health and
                         recovery.</p>
                 </div>
-                <div class="col-lg-3 common_section_img d-none d-lg-block">
+                <div class="col-lg-3 common_section_img d-none d-lg-block" data-aos="fade-left"
+                    data-aos-duration="3000">
                     <img src="./assests/R1__4_-removebg-preview_enhanced 1.png" alt="">
                 </div>
             </div>
@@ -247,7 +274,7 @@
 
             <div class="row">
                 <!--Block-->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="2000">
                     <div class="service-block">
                         <div class="service-logo">
                             <img src="./assests/asset 12.svg" alt="">
@@ -260,7 +287,7 @@
 
 
                 <!--Block-->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="2000">
                     <div class="service-block">
                         <div class="service-logo">
                             <img src="./assests/asset 13.svg" alt="">
@@ -273,7 +300,7 @@
 
 
                 <!--Block-->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="2000">
                     <div class="service-block">
                         <div class="service-logo">
                             <img src="./assests/asset 14.svg" alt="">
@@ -286,7 +313,7 @@
 
 
                 <!--Block-->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="2000">
                     <div class="service-block">
                         <div class="service-logo">
                             <img src="./assests/asset 15.svg" alt="">
@@ -301,7 +328,7 @@
 
             <div class="row">
                 <!--Block-->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="2000">
                     <div class="service-block">
                         <div class="service-logo">
                             <img src="./assests/asset 25.svg" alt="">
@@ -314,7 +341,7 @@
 
 
                 <!--Block-->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="2000">
                     <div class="service-block">
                         <div class="service-logo">
                             <img src="./assests/asset 26.svg" alt="">
@@ -327,7 +354,7 @@
 
 
                 <!--Block-->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="2000">
                     <div class="service-block">
                         <div class="service-logo">
                             <img src="./assests/asset 27.svg" alt="">
@@ -340,7 +367,7 @@
 
 
                 <!--Block-->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="2000">
                     <div class="service-block">
                         <div class="service-logo">
                             <img src="./assests/asset 28.svg" alt="">
@@ -355,7 +382,7 @@
 
             <div class="row">
                 <!--Block-->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="2000">
                     <div class="service-block">
                         <div class="service-logo">
                             <img src="./assests/asset 29.svg" alt="">
@@ -368,7 +395,7 @@
 
 
                 <!--Block-->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="2000">
                     <div class="service-block">
                         <div class="service-logo">
                             <img src="./assests/asset 27.svg" alt="">
@@ -379,7 +406,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-duration="2000">
                     <div class="service-block text-center">
                         <div class="service-logo" style="margin: 25px auto;">
                             <img src="./assests/asset 27.svg" alt="">
@@ -401,12 +428,29 @@
         </div>
     </div>
 
+    <div id="Gallery" class="unipadding">
+        <h3>Gallery</h3>
+        <div class="container gallery">
+            <img src="./assests/R.jfif" alt="Image 1">
+            <img src="./assests/R2.jfif" alt="Image 2">
+            <img src="./assests/R3.jpg" alt="Image 3">
+            <img src="./assests/R4.jfif" alt="Image 4">
+            <img src="./assests/R5.jpg" alt="Image 5">
+            <img src="./assests/R6.jpg" alt="Image 6">
+        </div>
+    </div>
 
-    <div class="clients unipadding">
+
+
+
+
+
+
+    <div class="clients unipadding" data-aos="fade-up" data-aos-duration="3000">
         <div class="container">
             <div class="row">
                 <div class="client-title">
-                 <span class="client-block">Review</span>
+                    <span class="client-block">Review</span>
                     <h3 class="client">What Our Client Say</h3>
                 </div>
                 <div class="col-12">
@@ -432,7 +476,7 @@
                                         regarding staying healthy and also benefitted physically due to the exercises by
                                         going to Physio Kolkata. Thank you and best wishes.</p>
                                     <span class="client-name">-Subhendu Ghatak</span>
-                                    
+
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -440,7 +484,7 @@
                                     <p>Excellent service..very good behaviour..was surprised by the quick recovery of my
                                         83yr old mother from a hip implant surgery</p>
                                     <span class="client-name">-Chaitali Sen</span>
-                                   
+
                                 </div>
 
                             </div>
@@ -453,7 +497,7 @@
                                         and treated me so well hence i can again go for jogging.Most important thing
                                         which i would like to say therapists are experienced and very cordial.</p>
                                     <span class="client-name">-Yash Kashyap</span>
-                                   
+
                                 </div>
 
                             </div>
@@ -465,7 +509,7 @@
                                         dedicated to there work .I went for my back pain to Dr.Ravi I had took seven
                                         session and I am totally fit and fine.</p>
                                     <span class="client-name">-prabin jha</span>
-                                    
+
                                 </div>
 
 
@@ -478,7 +522,7 @@
                                         And ease our life
                                         I strongly recommend it.</p>
                                     <span class="client-name">-Sonia Limbu</span>
-            
+
                                 </div>
 
                             </div>
@@ -488,10 +532,10 @@
                                         and the way of talking is exceptional.. very good place to be treated mentally
                                         and physically </p>
                                     <span class="client-name">-pranay raj</span>
-                                  
+
                                 </div>
                             </div>
-                           
+
 
 
 
@@ -501,7 +545,7 @@
 
 
                         </div>
-                        
+
                     </div>
 
 
@@ -524,7 +568,7 @@
             </div>
             <div class="row">
                 <!---------------------->
-                <div class="col-lg-6 p-0">
+                <div class="col-lg-6 p-0" data-aos="fade-right" data-aos-duration="3000">
                     <div class="left-Us">
 
 
@@ -570,7 +614,7 @@
 
                 <!------------------------>
                 <!---------------------->
-                <div class="col-lg-6 p-0">
+                <div class="col-lg-6 p-0" data-aos="fade-left" data-aos-duration="3000">
                     <div class="right-Us">
                         <!--Block-->
                         <div class="block-us block-us-2">
@@ -610,7 +654,7 @@
                 </div>
 
 
-                <div class="col-12">
+                <div class="col-12" data-aos="fade" data-aos-duration="1000">
                     <div class="why-us-image d-none d-lg-block">
                         <img src="./assests/image 1.png" alt="">
                     </div>
@@ -626,7 +670,7 @@
 
 
 
-    <div class="solution">
+    <div class="solution " data-aos="fade" data-aos-duration="2000">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -641,8 +685,8 @@
         </div>
     </div>
     <!--Pointer Tail-->
-   
-    <div class="contact unipadding">
+
+    <div class="contact unipadding" id="contact">
         <div class="contact-box">
             <h3>Contact Us</h3>
         </div>
@@ -650,7 +694,7 @@
             <div class="row">
 
                 <!--Block-->
-                <div class="col-lg-3 col-md-6 mt-3">
+                <div class="col-lg-3 col-md-6 mt-3" data-aos="fade-up" data-aos-duration="2000">
                     <div class="innerbox">
                         <div class="contact-icon">
                             <img src="./assests/one.svg" alt="">
@@ -665,7 +709,7 @@
 
 
                 <!--Block-->
-                <div class="col-lg-3 col-md-6 mt-3">
+                <div class="col-lg-3 col-md-6 mt-3" data-aos="fade-up" data-aos-duration="2000">
                     <div class="innerbox">
                         <div class="contact-icon">
                             <img src="./assests/two.svg" alt="">
@@ -678,24 +722,24 @@
                 </div>
 
 
-                
+
                 <!--Block-->
-                <div class="col-lg-3 col-md-6 mt-3">
+                <div class="col-lg-3 col-md-6 mt-3" data-aos="fade-up" data-aos-duration="2000">
                     <div class="innerbox">
                         <div class="contact-icon">
                             <img src="./assests/three.svg" alt="">
                         </div>
                         <div class="contact-detail">
                             <h5>Contact</h5>
-                            <p>+91 - 90888 55533<br> 
-                             +91 - 90888 55522</p>
+                            <p>+91 - 90888 55533<br>
+                                +91 - 90888 55522</p>
                         </div>
                     </div>
                 </div>
 
-     
+
                 <!--Block-->
-                <div class="col-lg-3 col-md-6 mt-3">
+                <div class="col-lg-3 col-md-6 mt-3" data-aos="fade-up" data-aos-duration="2000">
                     <div class="innerbox">
                         <div class="contact-icon">
                             <img src="./assests/four.svg" alt="">
@@ -707,7 +751,7 @@
                     </div>
                 </div>
 
-                
+
 
 
 
@@ -716,15 +760,18 @@
 
             </div>
             <div class="row mt-5">
-                <div class="map col-lg-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4410.392919365109!2d88.39351087590157!3d22.514478835096924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027137ce00735d%3A0x387e1db184606bca!2sPhysio%20Kolkata!5e1!3m2!1sen!2sin!4v1740566491218!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="map col-lg-6" data-aos="fade-left" data-aos-duration="2000">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4410.392919365109!2d88.39351087590157!3d22.514478835096924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027137ce00735d%3A0x387e1db184606bca!2sPhysio%20Kolkata!5e1!3m2!1sen!2sin!4v1740566491218!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="contact_form col-lg-6">
+                <div class="contact_form col-lg-6" data-aos="fade-right" data-aos-duration="2000">
                     <span class="contact-block">Contact Us</span>
                     <h3>Get in Touch With Us</h3>
 
 
-                    <div class="enquiry">
+                    <div class="enquiry ">
                         <div class="row">
 
 
@@ -743,40 +790,45 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <input type="number" name="number" required placeholder="Enter Phone Number" required>
+                                        <input type="number" name="number" required placeholder="Enter Phone Number"
+                                            required>
                                     </div>
                                     <div class="col-lg-6">
                                         <input type="text" name="subject" required placeholder="Enter Subject" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <textarea name="message" required placeholder="Enter Your Message" rows="10"></textarea>
+                                    <textarea name="message" required placeholder="Enter Your Message"
+                                        rows="10"></textarea>
                                 </div>
-                                 
-                
+
+
                                 <!-- Honeypot Spam Protection -->
                                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                            
+
                                 <!-- Custom Confirmation / Success Page -->
                                 <!--<input type="hidden" name="redirect" value=>-->
                                 <input type="hidden" name="redirect" value="https://physiokolkata.com/#contact">
-                            
+
                                 <button type="submit" class="default_button">Submit Form</button>
-                            
+
                             </form>
-                           
+
 
                         </div>
-                       
+
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </div>
-   
-  
 
+
+
+
+
+    <footer>designed and Developed by <a href="https://www.nameyindia.com/">Namey India</a></footer>
 
 
     <div class="cursor"></div>
@@ -798,16 +850,16 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
             pagination: {
-        el: ".swiper-pagination",
-        type: "progressbar",
-      },
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
             navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      autoplay: {
-   delay: 5000,
- },
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 5000,
+            },
 
             breakpoints: {
                 1200: {
@@ -820,7 +872,7 @@
                     spaceBetween: 20,
                 }
                 ,
-                400 : {
+                400: {
                     slidesPerView: 1,
                     spaceBetween: 20,
                 }
@@ -828,6 +880,12 @@
 
             }
         });
+    </script>
+
+    <!--Scroll Event-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 </body>
