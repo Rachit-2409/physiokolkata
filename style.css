@@ -139,7 +139,7 @@ p {
 }
 /*--------HEADER------*/
 .header {
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     box-shadow: 0 4px 20px hsla(209, 21%, 79%, 0.438);
